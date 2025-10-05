@@ -2,15 +2,30 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-  <bean class="com.mumin.springdi.setterinjectionliterals.Employee" id="employee1">
-    <property name="empId" value="101"/>
-    <property name="empName" value="Anik Khan"/>
-    <property name="empAddress" value="Mohammadpur"/>
+
+  <!--  Setter Injection: Literals-->
+  <!--  <bean class="com.mumin.springdi.setterinjectionliterals.Employee" id="employee1">
+      <property name="empId" value="101"/>
+      <property name="empName" value="Anik Khan"/>
+      <property name="empAddress" value="Mohammadpur"/>
+    </bean>
+
+    <bean class="com.mumin.springdi.setterinjectionliterals.Employee" id="employee2">
+      <property name="empId" value="107"/>
+      <property name="empName" value="Abdullah"/>
+      <property name="empAddress" value="Sayedabad"/>
+    </bean>-->
+  <!--  Constructor Injection: Literals-->
+  <bean id="student1" class="com.mumin.springdi.constructorinjectionliterals.Student">
+    <constructor-arg name="stdId" value="25"/>
+    <constructor-arg name="stdName" value="Abdur Rahim"/>
+    <constructor-arg name="stdDepartment" value="CSE"/>
   </bean>
 
-  <bean class="com.mumin.springdi.setterinjectionliterals.Employee" id="employee2">
-    <property name="empId" value="107"/>
-    <property name="empName" value="Abdullah"/>
-    <property name="empAddress" value="Sayedabad"/>
+  <bean id="student2" class="com.mumin.springdi.constructorinjectionliterals.Student">
+    <constructor-arg name="stdId" value="17"/>
+    <constructor-arg name="stdName" value="Sabbir Sarwar"/>
+    <constructor-arg name="stdDepartment" value="BBA"/>
   </bean>
+
 </beans>
