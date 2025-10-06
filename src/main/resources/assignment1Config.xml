@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+  <bean class="com.mumin.springdi.assignment1.DataService" id="dataService"></bean>
+  <bean class="com.mumin.springdi.assignment1.HelloTuneService" id="helloTuneService"></bean>
+  <bean class="com.mumin.springdi.assignment1.MissedCallAlertService"
+    id="missedCallAlertService"></bean>
+  <bean class="com.mumin.springdi.assignment1.Airtel" id="airtel">
+    <property name="service" ref="helloTuneService"></property>
+  </bean>
+
+
+</beans>
